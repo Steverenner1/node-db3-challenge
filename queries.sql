@@ -18,7 +18,7 @@ where OrderID = "10251"
 order by ProductName;
 
 -- Display the OrderID, Customer's Company Name and the employee's LastName for every order. All columns should be labeled clearly. Displays 16,789 records.
-SELECT [Order].Id, [Customer].CompanyName, [Employee].LastName
-FROM [Order]
-JOIN [Customer], [Employee]
-WHERE [Order].CustomerId = [Customer].Id AND [Order].EmployeeId = [Employee].Id;
+select [Order].Id, [Customer].CompanyName, [Employee].LastName
+from [Order]
+join [Customer], [Employee]
+where [Order].CustomerId = [Customer].Id AND [Order].EmployeeId = [Employee].Id;
